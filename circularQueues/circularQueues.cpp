@@ -27,3 +27,10 @@ public:
 			FRONT = 0;
 			REAR = 0;
 		}
+		else {
+			//jika rear berada di posisi terakhir array, kembali ke awal
+			if (REAR == max - 1)
+				REAR = 0;
+			else
+				REAR = REAR + 1;
+		}
