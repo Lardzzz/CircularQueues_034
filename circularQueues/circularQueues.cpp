@@ -69,3 +69,12 @@ public:
 		}
 
 		cout << "\nElements in the queue are: \n";
+
+		//Jika front_position <= rear position, iterasi dari FRONT hingga REAR
+		if (FRONT_position <= max - 1) {
+			cout << queue_array[FRONT_position] << "	";
+			FRONT_position++;
+		}
+
+		FRONT_position = 0;
+
